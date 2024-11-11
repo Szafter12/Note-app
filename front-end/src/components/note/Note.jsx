@@ -30,11 +30,11 @@ export const restoreFromArchive = async ({ request, params }) => {
 	const body = formData.get('body')
 	const folderId = formData.get('folderId')
 
-	await fetch(`http://localhost:3000/archive/${params.noteId}`, {
+	await fetch(`https://note-app-x9sh.onrender.com/archive/${params.noteId}`, {
 		method: 'DELETE',
 	})
 
-	return fetch('http://localhost:3000/notes/', {
+	return fetch('https://note-app-x9sh.onrender.com/notes/', {
 		method: 'POST',
 		headers: {
 			'Content-type': 'application/json',
@@ -50,7 +50,7 @@ export const restoreFromArchive = async ({ request, params }) => {
 }
 
 export const deleteFromArchive = ({ params }) => {
-	return fetch(`http://localhost:3000/archive/${params.noteId}`, {
+	return fetch(`https://note-app-x9sh.onrender.com/archive/${params.noteId}`, {
 		method: 'DELETE',
 	}).then(() => {
 		return redirect('/archive')
@@ -63,11 +63,11 @@ export const deleteNote = async ({ request, params }) => {
 	const body = formData.get('body')
 	const folderId = formData.get('folderId')
 
-	await fetch(`http://localhost:3000/notes/${params.noteId}`, {
+	await fetch(`https://note-app-x9sh.onrender.com/notes/${params.noteId}`, {
 		method: 'DELETE',
 	})
 
-	return fetch('http://localhost:3000/archive', {
+	return fetch('https://note-app-x9sh.onrender.com/archive', {
 		method: 'POST',
 		headers: {
 			'Content-type': 'application/json',
