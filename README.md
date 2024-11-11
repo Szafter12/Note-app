@@ -47,6 +47,7 @@ Start the server
 
 ## Appendix
 
+Application isn't responsive I will change it soon
 Anyone can add a note so I am not responsible for what is found there.
 
 
