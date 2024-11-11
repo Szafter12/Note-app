@@ -17,7 +17,7 @@ const UserCreatedFolders = ({ children }) => (
 export const createFolder = async args => {
 	const data = await args.request.formData()
 	const folderName = await data.get('folder-name')
-	return fetch('http://localhost:3000/folders', {
+	return fetch('https://note-app-x9sh.onrender.com/folders', {
 		method: 'POST',
 		body: JSON.stringify({
 			name: folderName,

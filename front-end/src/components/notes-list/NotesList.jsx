@@ -14,7 +14,7 @@ const Notes = ({ children }) => (
 )
 
 export const createNote = ({ params }) => {
-	return fetch('http://localhost:3000/notes', {
+	return fetch('https://note-app-x9sh.onrender.com/notes', {
 		method: 'POST',
 		body: JSON.stringify({
 			title: 'Nowa notatka',

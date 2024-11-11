@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 			}
 		},
 		loader: () => {
-			return fetch('http://localhost:3000/folders')
+			return fetch('https://note-app-x9sh.onrender.com/folders')
 		},
 
 		children: [
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 				path: 'archive',
 				element: <NotesList />,
 				loader: () => {
-					return fetch('http://localhost:3000/archive')
+					return fetch('https://note-app-x9sh.onrender.com/archive')
 				},
 				children: [
 					{
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
 						action: updateNote,
 						errorElement: <NotFound />,
 						loader: async ({ params }) => {
-							const res = await fetch(`http://localhost:3000/archive/${params.noteId}`)
+							const res = await fetch(`https://note-app-x9sh.onrender.com/archive/${params.noteId}`)
 
 							if (res.status === 404) {
 								throw new Error()
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
 							{
 								path: 'delete',
 								action: deleteFromArchive,
-							}
+							},
 						],
 					},
 				],
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
 				element: <NotesList />,
 				action: createNote,
 				loader: ({ params }) => {
-					return fetch(`http://localhost:3000/notes?folderId=${params.folderId}`)
+					return fetch(`https://note-app-x9sh.onrender.com/notes?folderId=${params.folderId}`)
 				},
 				children: [
 					{
@@ -92,7 +92,7 @@ const router = createBrowserRouter([
 						},
 						errorElement: <NotFound />,
 						loader: async ({ params }) => {
-							const res = await fetch(`http://localhost:3000/notes/${params.noteId}`)
+							const res = await fetch(`https://note-app-x9sh.onrender.com/notes/${params.noteId}`)
 
 							if (res.status === 404) {
 								throw new Error()

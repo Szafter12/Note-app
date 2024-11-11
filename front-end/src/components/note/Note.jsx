@@ -12,7 +12,7 @@ export const updateNote = async ({ request, params }) => {
 	const data = await request.formData()
 	const title = await data.get('title')
 	const body = await data.get('body')
-	return fetch(`http://localhost:3000/notes/${params.noteId}`, {
+	return fetch(`https://note-app-x9sh.onrender.com/notes/${params.noteId}`, {
 		method: 'PATCH',
 		body: JSON.stringify({
 			title,
