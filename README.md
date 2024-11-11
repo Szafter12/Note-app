@@ -1,11 +1,9 @@
-
 # Note App React
 
-Note app created in react using react-router-dom and json server. json server working on render free plan so waiting times may be longer than normal
+Note app created in react using react-router-dom and json server. This project it's a part of [zrozumieć-react.pl](https://zrozumiecreact.pl/) course. Json server working on render free plan so waiting times may be longer than normal
 ## Demo
 
 https://note-app-szafter12.netlify.app/
-
 
 ## Run Locally
 
@@ -42,14 +40,10 @@ Start the server
 - Deleting notes 
 - Archive folder for delete notes
 
-
-
-
 ## Appendix
 
 Application isn't responsive I will change it soon
 Anyone can add a note so I am not responsible for what is found there.
-
 
 ## Tech Stack
 
@@ -57,10 +51,6 @@ Anyone can add a note so I am not responsible for what is found there.
 - JSON server
 - Vite
 
-
-
-
 ## Authors
 
 - [@Jakub Pachut](https://github.com/Szafter12)
-
