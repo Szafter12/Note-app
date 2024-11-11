@@ -32,7 +32,7 @@ Start the server
 ```bash
   npm run dev
 ```
-
+![App Screenshot](./readme.png)
 
 ## Features
 
