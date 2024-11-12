@@ -2,7 +2,7 @@
 
 Note app created in react using react-router-dom and json server. This project it's a part of [zrozumieć-react.pl](https://zrozumiecreact.pl/) course.
 <br><br>
-The backend server is running on a free version of Render web service so the landing time of the site and images may be longer please be patient.
+<b>WARNING! The backend server is running on a free version of Render web service so the landing time of the site and images may be longer please be patient.</b> .
 
 ## Demo
 
