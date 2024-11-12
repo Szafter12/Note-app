@@ -1,6 +1,9 @@
 # Note App React
 
-Note app created in react using react-router-dom and json server. This project it's a part of [zrozumieć-react.pl](https://zrozumiecreact.pl/) course. Json server working on render free plan so waiting times may be longer than normal
+Note app created in react using react-router-dom and json server. This project it's a part of [zrozumieć-react.pl](https://zrozumiecreact.pl/) course.
+<br><br>
+The backend server is running on a free version of Render web service so the landing time of the site and images may be longer please be patient.
+
 ## Demo
 
 https://note-app-szafter12.netlify.app/
